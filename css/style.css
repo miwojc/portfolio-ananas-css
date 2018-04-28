@@ -5,24 +5,32 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  color: #334431;
+  font-family: 'Roboto', sans-serif;
+  color: #3c3c3c;
   margin: 0px;
   padding: 0px;
 }
 
 #welcome-section {
+  font-family: 'Poppins', sans-serif;
+  color: #e05038;
   background-color: #e6af4b;
   margin-top: 0px;
-  padding-top: 140px;
+  padding-top: 135px;
   border: 0px;
   height: 100vh;
   text-align: center;
-  font-size: 34px;
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 0px;
+}
+
+#web {
+  font-size: 65px;
 }
 
 #projects {
-  background-color: #f2cbbc
+  background-color: #f1f1f1;
 }
 
 ul {
@@ -52,8 +60,55 @@ li a:hover {
   background-color: #e05038;
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 500px){
     li {
       float: none;
   }
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
